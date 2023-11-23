@@ -86,7 +86,7 @@ function App() {
                 <MeasurementUI headingText={"Measurement 1"} radius={el.Radius1} area={el.Area1} />
                 <MeasurementUI headingText={"Measurement 2"} radius={el.Radius2} area={el.Area2} />
               </div>
-              <h2>Variance: {el.Variance}</h2>
+              <h2 style={{ color: "greenyellow" }}>Variance: {el.Variance}</h2>
             </>
           )
         })}
