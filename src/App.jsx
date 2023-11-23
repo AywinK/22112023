@@ -1,4 +1,5 @@
 import "./App.css";
+import { MeasurementUI } from "./components/MeasurementUI";
 
 function App() {
   const strArr = ["Apple", "Pear", "Orange"];
@@ -75,6 +76,20 @@ function App() {
         )}
         <br />
         <UI />
+        <br />
+        {data.map((el, i) => {
+          const stylesObj = { display: "flex", gap: "2rem" }
+          return (
+            <>
+              <h1>Circle {i + 1}</h1>
+              <div key={i} style={stylesObj}>
+                <MeasurementUI headingText={"Measurement 1"} radius={el.Radius1} area={el.Area1} />
+                <MeasurementUI headingText={"Measurement 2"} radius={el.Radius2} area={el.Area2} />
+              </div>
+              <h2>Variance: {el.Variance}</h2>
+            </>
+          )
+        })}
       </div>
     </>
   );
