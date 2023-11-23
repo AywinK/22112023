@@ -1,5 +1,6 @@
 import "./App.css";
 import { MeasurementUI } from "./components/MeasurementUI";
+import { ToggleSwitch } from "./components/ToggleSwitch";
 
 function App() {
   const strArr = ["Apple", "Pear", "Orange"];
@@ -90,6 +91,8 @@ function App() {
             </>
           )
         })}
+        <br />
+        <ToggleSwitch />
       </div>
     </>
   );
