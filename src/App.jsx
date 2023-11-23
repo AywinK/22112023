@@ -1,4 +1,5 @@
 import "./App.css";
+import { Form } from "./components/Form";
 import { MeasurementUI } from "./components/MeasurementUI";
 import { ToggleSwitch } from "./components/ToggleSwitch";
 
@@ -93,6 +94,8 @@ function App() {
         })}
         <br />
         <ToggleSwitch />
+        <br />
+        <Form />
       </div>
     </>
   );

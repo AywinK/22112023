@@ -12,9 +12,11 @@ const ToggleSwitch = () => {
     }
 
     return (
+        <>
         <button onClick={handleClick}>
-            <p style={(lightSwitch === "OFF") ? { color: "red" } : { color: "greenyellow" }}>{lightSwitch}</p>
+            <p style={{ color: (lightSwitch === "OFF") ? "red" : "greenyellow" }}>{lightSwitch}</p>
         </button>
+        </>
     )
 }
 
